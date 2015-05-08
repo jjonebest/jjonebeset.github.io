@@ -1,15 +1,29 @@
 --- layout: about ---
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-{% include head.html %}
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>九江唯壹佳工程有限公司</title>
+<meta name="keywords" content="九江唯壹佳工程有限公司">
+<meta name="description" content="九江唯壹佳工程有限公司">
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<link href="./favicon.ico" rel="shortcut icon">
+<link type="text/css" rel="stylesheet" href="/public/css/style.css">
+<link type="text/css" rel="stylesheet" href="/public/css/thinklog.css">
+<link type="text/css" rel="stylesheet" href="/public/css/incstyle.css">
+<script type="text/javascript" src="/public/js/navmenu.js"></script>
+<script type="text/javascript" src="/public/js/xltab.js"></script>
+<script type="text/javascript" src="/public/js/jquery.js"></script>
+</head>
 
 <body>
     <div class="banner1">
-        <div style="background:url({{site.baseurl}}public/images/ban1.jpg) no-repeat center 0; width:100%; height:300px;"></div>
+        <div style="background:url(/public/images/ban1.jpg) no-repeat center 0; width:100%; height:300px;"></div>
     </div>
     <div class="w_head">
         <div class="w1000">
-            <h1 class="w_logo"><a href="index.asp"><img src="{{site.baseurl}}public/images/logo.gif" border="0" /></a></h1>
+            <h1 class="w_logo"><a href="index.asp"><img src="/public/images/logo.gif" border="0" /></a></h1>
             <div class="w_nav">
                 <!-- 
                 <div class="topmenu"><a class="w_tel" href="about.asp?id=7">电话</a> <a class="w_weibo" href="http://e.weibo.com/#" target="_blank">微博</a></div>
@@ -97,7 +111,7 @@
     document.getElementById('ms1').className = 'on';
     </script>
     <!--nav_content end-->
-    <link type="text/css" rel="stylesheet" href="{{site.baseurl}}public/css/inside.css" />
+    <link type="text/css" rel="stylesheet" href="/public/css/inside.css" />
     <div class="w_box1">
         <div class="w1000">
             <!--web_content-->
@@ -123,15 +137,18 @@
                         </div>
                     </div>
                 </div>
-                <a href="add_book.asp"><img src="{{site.baseurl}}public/images/baojia1.gif" /></a>
-                <a href="about.asp?id=7"><img src="{{site.baseurl}}public/images/contus.gif" /></a>
+                <a href="add_book.asp"><img src="/public/images/baojia1.gif" /></a>
+                <a href="about.asp?id=7"><img src="/public/images/contus.gif" /></a>
             </div>
             <!--jd_web_left end-->
             <!--jd_web_right-->
             <div class="jd_web_right fr">
                 <div class="weizhi">您当前位置：<a href="index.asp">首页</a>&nbsp;&raquo;&nbsp;<a href="about.asp?id=3">关于壹佳</a>&nbsp;&raquo;&nbsp;<span><a href='#'>关于我们</a></span></div>
                 <div class="jd_right_content">
-                    {{content}}
+                    地址：武汉市武昌区中北路世纪大厦1605
+      武汉市武昌区汉街总部国际B座2006
+电话：027-86739995   18995631661
+邮箱：2995322144@qq.com
                 </div>
             </div>
         </div>
@@ -139,7 +156,23 @@
         <div class="clear"></div>
     </div>
     </div>
-    {%include footer.html%}
+    <!--yiihoo 修正css信息，必须加上-->
+<link type="text/css" rel="stylesheet" href="/public/css/yiihoo.css" />
+<!--footer-->
+<div class="jd_footer">
+    <div class="jd_foot w1000">
+        <div class="lf">
+            Copyright&nbsp; 九江唯壹佳工程有限公司 2004-2014&nbsp; All Rights Reserved
+            <br /> 网站备案号：鄂ICP备13004234号
+        </div>
+        <div class="rf">
+            地址：武汉汉街总部国际B座2006
+            <br /> 总机：400-658-3321&nbsp; 传真：027-86739995&nbsp; 邮箱：<a href="mailto:wuhan_onebest@sina.com">wuhan_onebest@sina.com</a>
+        </div>
+    </div>
+</div>
+
+
 </body>
 
 </html>

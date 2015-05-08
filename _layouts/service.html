@@ -5,7 +5,7 @@
 
 <body>
     <div class="banner1">
-        <div style="background:url(images/ban5.jpg) no-repeat center 0; width:100%; height:300px;"></div>
+        <div style="background:url({{site.base.url}}public/images/ban5.jpg) no-repeat center 0; width:100%; height:300px;"></div>
     </div>
 
     {% include nav.html %}
@@ -33,9 +33,9 @@
                     <div class="leftContents">
                         <div id="smoothmenu2">
                             <ul>
-                                <li class="current"><a href="fuwu.asp?id=8">售后服务</a></li>
-                                <li><a href="fuwu.asp?id=9">舒适家居知识</a></li>
-                                <li><a href="fuwu.asp?id=10">供暖系统知识</a></li>
+                                <li class="current"><a href="{{site.baseurl}}service/1.html">售后服务</a></li>
+                                <li><a href="{{site.baseurl}}service/2.html">舒适家居知识</a></li>
+                                <li><a href="{{site.baseurl}}service/3.html">供暖系统知识</a></li>
                             </ul>
                             <br style="clear: left">
                         </div>
@@ -46,14 +46,7 @@
             </div>
             <!--jd_web_left end-->
             <!--jd_web_right-->
-            <div class="jd_web_right fr">
-                <div class="weizhi">您当前位置：<a href="index.asp">首页</a>&nbsp;&raquo;&nbsp;<a href="fuwu.asp?id=8">售后服务</a>&nbsp;&raquo;&nbsp;<span><a href='#'>售后服务</a></span></div>
-                <div class="jd_right_content">
-                    <p class="large_font_gray line_height">
-                        {{content}}
-                    </p>
-                </div>
-            </div>
+            {% include right.html %}
             <!--jd_web_right end-->
             <div class="clear"></div>
         </div>

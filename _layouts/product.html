@@ -1,0 +1,56 @@
+--- layout: product ---
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+{% include head.html %}
+
+<body>
+    <div class="banner1">
+        <div style="background:url({{site.baseurl}}public/images/ban2.jpg) no-repeat center 0; width:100%; height:300px;"></div>
+    </div>
+    {% include nav.html %}
+    <!--banner end-->
+    <div class="clear"></div>
+    <script type="text/javascript">
+    var menu = new menu.dd("menu");
+    menu.init("menu", "menuhover");
+    document.getElementById('ms2').className = 'on';
+    </script>
+    <!--nav_content end-->
+    <link type="text/css" rel="stylesheet" href="{{site.baseurl}}public/css/inside.css" />
+    <div class="w_box1">
+        <div class="w1000">
+            <!--web_content-->
+            <!--jd_web_left-->
+            <div class="jd_web_left fl">
+                <div class="join_jd">
+                    <div class="leftContents">
+                        <div id="smoothmenu2">
+                            <ul>
+                                <li><a href="products.asp?BigClassID=1&SmallClassID=1" title="燃气供暖">燃气供暖</a></li>
+                                <li><a href="products.asp?BigClassID=1&SmallClassID=2" title="净水设备">净水设备</a></li>
+                                <li><a href="products.asp?BigClassID=1&SmallClassID=4" title="中央热水">中央热水</a></li>
+                                <li><a href="products.asp?BigClassID=1&SmallClassID=11" title="中央空调">中央空调</a></li>
+                                <li><a href="products.asp?BigClassID=1&SmallClassID=5" title="其它配件">其它配件</a></li>
+                                <li><a href="products.asp?BigClassID=1&SmallClassID=10" title="更多产品">更多产品</a></li>
+                            </ul>
+                            <br style="clear: left">
+                        </div>
+                    </div>
+                </div>
+                <a href="add_book.asp"><img src="{{site.baseurl}}public/images/baojia1.gif" /></a>
+                <a href="about.asp?id=7"><img src="{{site.baseurl}}public/images/contus.gif" /></a>
+            </div>
+            <!--jd_web_left end-->
+            <!--jd_web_right-->
+                {% include right.html %}
+            <!--jd_web_right end-->
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!--yiihoo 修正css信息，必须加上-->
+        <link type="text/css" rel="stylesheet" href="theme/default/css/yiihoo.css" />
+        <!--footer-->
+        {% include footer.html %}
+</body>
+
+</html>

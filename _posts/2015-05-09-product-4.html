@@ -1,0 +1,38 @@
+---
+layout: product 
+title: 产品介绍 
+permalink: product/page4.html 
+---
+
+<ul id="jd_product">
+    {% for product in site.data.products3 %}
+    <li>
+        <div class="pro_pic">
+            <a href="Showproducts.asp?id=69" title="{{product.title}}"><img src="{{site.baseurl}}public/images/{{product.img}}" border="0" class="inc_img" /></a>
+        </div>
+        <span class="meduium_font_light"><a href="Showproducts.asp?id=69"  title="{{product.title}}" class="meduium_font_gray">{{product.title}}</a></span>
+    </li>
+    {% endfor %}
+</ul>
+<p>&nbsp;</p>
+<div class="pages">
+    <table width=100% border=0 cellpadding=0 cellspacing=0 style='font-size:12px;'>
+        <form method=get onsubmit="document.location = '{{site.baseurl}}product/page'+ this.page.value + '.html';return false;">
+            <tr>
+                <td align=left class=hui>
+                    <p align=center>
+                        <a href="{{site.baseurl}}product/page1.html">首页</a>
+                        <a href="{{site.baseurl}}product/page3.html">上一页</a> 下一页 尾页 页次：4/4页 共46条记录 转
+                        <input class=wenbenkuang tyep=text name=page size=2 maxlength=5 value=4>页
+                        <input class=go-wenbenkuang type=submit value=go>
+                </td>
+            </tr>
+        </form>
+    </table>
+</div>
+
+
+
+
+
+

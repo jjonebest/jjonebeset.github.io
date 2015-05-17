@@ -20,9 +20,9 @@
 .nav a.on{   width:95px; display:block; color:#017ec6;}
 .nav li { font-size:14px;  font-family:"微软雅黑"; position:relative; float:left; height:43px; line-height:43px; text-align:center; width:95px;}
 
-.nav .jdfd{ width:135px; float:right;height:25px; display:block;}
-.nav .jdfd .jdfdlist { width:300px; height: auto; position:absolute; top:23px; _left:1px; left:-70px;  display:none; background:rgba(92, 92, 92, 0.8) none repeat scroll 0 0 !important;filter:Alpha(opacity=80); background:#5c5c5c; list-style:none; z-index:500; clear:both; white-space: nowrap;}
-.nav .jdfd .jdfdlist li{ margin:5px 10px; position:relative; border-bottom:1px dotted #ccc; background:none !important; clear:both; width:260px; overflow:hidden; text-align:left; height:40px;}
+.nav .jdfd{ width:150px; float:right;height:25px; display:block;}
+.nav .jdfd .jdfdlist { width:450px; height: auto; position:absolute; top:23px; _left:1px; left:-300px;  display:none; background:rgba(92, 92, 92, 0.8) none repeat scroll 0 0 !important;filter:Alpha(opacity=80); background:#5c5c5c; list-style:none; z-index:500; clear:both; white-space: nowrap;}
+.nav .jdfd .jdfdlist li{ margin:5px 10px; position:relative; border-bottom:1px dotted #ccc; background:none !important; clear:both; width:450px; overflow:hidden; text-align:left; height:40px;}
 .nav .jdfd .jdfdlist li p{ font-size:12px; line-height:15px; position:relative; color:#fff;}
 
 

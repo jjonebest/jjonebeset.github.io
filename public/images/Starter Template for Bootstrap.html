@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://localhost:8080/article/44 -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://localhost:8080/favicon.ico">
+
+    <title>Starter Template for Bootstrap</title>
+
+    
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="http://localhost:8080/static/css/index.css" rel="stylesheet">
+
+    
+    
+</head>
+
+<body huaban_collector_injected="true" youdao="bind">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://localhost:8080/#">Bluesand</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="http://localhost:8080/#">Home</a></li>
+                <li><a href="http://localhost:8080/article/44#about">About</a></li>
+                <li><a href="http://localhost:8080/article/44#contact">Contact</a></li>
+            </ul>
+        </div>
+        
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 blog-main ">
+            <div class="blog-post">
+                <h2 class="blog-post-title">HTML</h2>
+
+                <p class="blog-post-meta">2015-05-22 by <a href="http://localhost:8080/article/44#"> admin</a></p>
+
+                <p></p><pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="zh-CN"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ --&gt;
+    &lt;meta name="description" content=""&gt;
+    &lt;meta name="author" content=""&gt;
+    &lt;link rel="icon" href="../../favicon.ico"&gt;
+
+    &lt;title&gt;Starter Template for Bootstrap&lt;/title&gt;
+
+    &lt;!-- Bootstrap core CSS --&gt;
+    &lt;link href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet"&gt;
+
+    &lt;!-- Custom styles for this template --&gt;
+    &lt;link href="/static/css/index.css" rel="stylesheet"&gt;
+
+    &lt;!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --&gt;
+    &lt;!--[if lt IE 9]&gt;
+    &lt;script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"&gt;&lt;/script&gt;
+    &lt;script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+
+    &lt;!-- highlight --&gt;
+    &lt;link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;nav class="navbar navbar-inverse navbar-fixed-top"&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="navbar-header"&gt;
+            &lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar"&gt;
+                &lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                &lt;span class="icon-bar"&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class="navbar-brand" href="/"&gt;Bluesand&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div id="navbar" class="collapse navbar-collapse"&gt;
+            &lt;ul class="nav navbar-nav"&gt;
+                &lt;li class="active"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;!--/.nav-collapse --&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-sm-10 col-sm-offset-1 blog-main "&gt;
+            &lt;div class="blog-post"&gt;
+                &lt;h2 class="blog-post-title"&gt;{{.article.Title}}&lt;/h2&gt;
+
+                &lt;p class="blog-post-meta"&gt;{{date .article.CreateAt "Y-m-d"}} by &lt;a href="#"&gt; {{.article.Author}}&lt;/a&gt;&lt;/p&gt;
+
+                &lt;p&gt;{{str2html  .article.Content}}&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;&lt;!-- /.container --&gt;
+
+
+&lt;!-- Bootstrap core JavaScript
+================================================== --&gt;
+&lt;!-- Placed at the end of the document so the pages load faster --&gt;
+&lt;script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- highlight --&gt;
+&lt;script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"&gt;&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="./Starter Template for Bootstrap_files/jquery.min.js"></script>
+<script src="./Starter Template for Bootstrap_files/bootstrap.min.js"></script>
+
+
+</body></html>

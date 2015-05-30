@@ -1,11 +1,11 @@
---- layout: news ---
+--- layout: join ---
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 {% include head.html %}
 
 <body>
     <div class="banner1">
-        <div style="background:url({{site.baseurl}}public/images/ban4.jpg) no-repeat center 0; width:100%; height:300px;"></div>
+        <div style="background:url({{site.baseurl}}public/images/ban3.jpg) no-repeat center 0; width:100%; height:300px;"></div>
     </div>
     {% include nav.html %}
     <!--banner end-->
@@ -20,18 +20,21 @@
     <div class="w_box1">
         <div class="w1000">
             <!--web_content-->
+            <script type="text/javascript">
+            var menu = new menu.dd("menu");
+            menu.init("menu", "menuhover");
+            document.getElementById('ms7').className = 'on';
+            </script>
             <!--jd_web_left-->
             <div class="jd_web_left fl">
                 <div class="join_jd">
                     <div class="leftContents">
                         <div id="smoothmenu2">
                             <ul>
-                                <li><a href="{{site.baseurl}}news/sub1/page1.html" titile="最新签约">最新签约</a></li>
-                                <li><a href="{{site.baseurl}}news/sub2/page1.html" titile="壹佳动态">壹佳动态</a></li>
-                                <li><a href="{{site.baseurl}}news/sub3/page1.html" titile="行业动态">行业动态</a></li>
-                                <li><a href="{{site.baseurl}}news/sub4/page1.html" titile="施工信息">施工信息</a></li>
-                                <li><a href="{{site.baseurl}}news/sub5/page1.html" titile="热门活动">热门活动</a></li>
-                                <li><a href="{{site.baseurl}}news/sub6/page1.html" titile="使用心得">使用心得</a></li>
+                                <li><a href="{{site.baseurl}}news/sub2/page1.html" title="中央空调">中央空调</a></li>
+                                <li><a href="{{site.baseurl}}news/sub3/page1.html" title="家庭供暖">家庭供暖</a></li>
+                                <li><a href="{{site.baseurl}}news/sub4/page1.html" title="净水案例">净水案例</a></li>
+                                <li><a href="{{site.baseurl}}news/sub5/page1.html" title="使用心得">使用心得</a></li>
                             </ul>
                             <br style="clear: left">
                         </div>
@@ -42,7 +45,7 @@
             </div>
             <!--jd_web_left end-->
             <!--jd_web_right-->
-            {% include right-list.html %}
+            {% include right.html %}
             <!--jd_web_right end-->
             <div class="clear"></div>
         </div>

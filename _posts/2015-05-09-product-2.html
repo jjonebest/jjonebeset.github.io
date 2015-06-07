@@ -8,9 +8,9 @@ permalink: /product/page2.html
     {% for product in site.data.products2 %}
     <li>
         <div class="pro_pic">
-            <a href="Showproducts.asp?id=69" title="{{product.title}}"><img src="{{site.baseurl}}public/images/{{product.img}}" border="0" class="inc_img" /></a>
+            <a href="{{site.baseurl}}product/detail/{{product.id}}.html" title="{{product.title}}"><img src="{{site.baseurl}}public/images/{{product.img}}" border="0" class="inc_img" /></a>
         </div>
-        <span class="meduium_font_light"><a href="Showproducts.asp?id=69"  title="{{product.title}}" class="meduium_font_gray">{{product.title}}</a></span>
+        <span class="meduium_font_light"><a href="{{site.baseurl}}product/detail/{{product.id}}.html"  title="{{product.title}}" class="meduium_font_gray">{{product.title}}</a></span>
     </li>
     {% endfor %}
 </ul>

@@ -1,10 +1,10 @@
 ---
 layout: case
 title: 最新签约
-permalink: /case/sub1/page1.html 
+permalink: /case/sub1/page5.html 
 ---
 <ul id="jd_product">
-    {% for case in site.data.case1 %}
+    {% for case in site.data.case5 %}
     <li>
         <div class="pro_pic">
             <a href="{{site.baseurl}}case/detail/{{case.id}}.html" title="{{case.title}}"><img src="{{site.baseurl}}public/uploadfile/{{case.img}}" border="0" class="inc_img" /></a>
@@ -20,10 +20,10 @@ permalink: /case/sub1/page1.html
             <tr>
                 <td align=left class=hui>
                     <p align=center>
-                        首页 上一页
-                        <a href="{{site.baseurl}}case/sub1/page2.html">下一页</a>
-                        <a href="{{site.baseurl}}case/sub1/page2.html">尾页</a> 页次：1/5页 共53条记录 转
-                        <input class=wenbenkuang tyep=text name=page size=2 maxlength=5 value=1>页
+                        <a href="{{site.baseurl}}case/sub1/page1.html">首页</a>
+                        <a href="{{site.baseurl}}case/sub1/page4.html">上一页</a>
+                        下一页 尾页  页次：1/5页 共53条记录 转
+                        <input class=wenbenkuang tyep=text name=page size=2 maxlength=5 value=5>页
                         <input class=go-wenbenkuang type=submit value=go>
                     </p>
                 </td>
@@ -31,4 +31,3 @@ permalink: /case/sub1/page1.html
         </form>
     </table>
 </div>
-
